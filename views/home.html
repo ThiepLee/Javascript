@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website - Home </title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <header class="container">
+      <div class="header__top d-flex justify-content-between">
+        <div class="header__social d-flex d-none d-lg-block">
+          <ul class="d-flex">
+                      <li class="p-3"><i class="bi bi-facebook"></i></li>
+                      <li class="p-3"><i class="bi bi-google"></i></li>
+                      <li class="p-3"><i class="bi bi-instagram"></i></li>
+                      <li class="p-3"><i class="bi bi-twitter"></i></li>
+          </ul>
+        </div>
+        <div class="header__login d-flex align-items-center"><a class="login text-uppercase text-dark p-4" href="sign-in.html">Đăng nhập </a><a class="register text-uppercase text-dark p-4" href="sign-up.html">Đăng ký</a></div>
+      </div>
+      <div class="header__bottom w-100">
+        <div class="d-flex align-items-center justify-content-between flex-lg-row flex-column">
+          <div class="header__logo"><a href="home.html"></a>
+            <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img class="img-fluid" src="../images/lgo.jpg" alt="logo image"></button>
+          </div>
+                    <div class="hotline d-none d-lg-block">
+                      <h5 class="text-primary pb-1">HOTLINE</h5>
+                      <p>(04) 9500 9650 - (04) 9500 8850</p>
+                    </div>
+                    <div class="hotline d-none d-lg-block">
+                      <h5 class="text-primary pb-1">ĐẶT HÀNG NHANH:</h5>
+                      <p>(04) 9500 9650 - (04) 9500 8850</p>
+                    </div>
+          <div class="header__search">
+            <form class="input-group border rounded-pill d-flex align-items-center justify-content-center w-100">
+              <input class="form-control text-secondary border-0 display-4" type="search" placeholder="Tìm kiếm ..." aria-describedby="button-addon3">
+              <div class="input-group-append border-0"></div>
+              <button class="btn btn-link" id="button-addon3" type="search"><i class="bi bi-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary mt-2">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="main_nav">
+          <ul class="navbar-nav">
+            <li class="nav-item active"><a class="nav-link" href="home.html">Trang chủ </a></li>
+            <li class="nav-item dropdown custom-dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Giới thiệu</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <div class="dropdown-item"><a><i class="bi bi-caret-right-fill" href="#">Giới thiệu chung</i></a></div>
+                </li>
+                <li class="dropend dropdownItem"><a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside"><i class="bi bi-caret-right-fill">Hệ thống cửa hàng</i></a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <div class="dropdown-item"><a><i class="bi bi-caret-right-fill" href="#">Hệ thống cửa hàng A1</i></a></div>
+                    </li>
+                    <li>
+                      <div class="dropdown-item"><a><i class="bi bi-caret-right-fill" href="#">Hệ thống cửa hàng A2</i></a></div>
+                    </li>
+                    <li>
+                      <div class="dropdown-item"><a><i class="bi bi-caret-right-fill" href="#">Hệ thống cửa hàng A3</i></a></div>
+                    </li>
+                    <li>
+                      <div class="dropdown-item"><a><i class="bi bi-caret-right-fill" href="#">Hệ thống cửa hàng A4</i></a></div>
+                    </li>
+                    <li>
+                      <div class="dropdown-item"><a><i class="bi bi-caret-right-fill" href="#">Hệ thống cửa hàng A5</i></a></div>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="dropdown-item"><a><i class="bi bi-caret-right-fill" href="#">Chính sách ưu đãi</i></a></div>
+                </li>
+                <li>
+                  <div class="dropdown-item"><a><i class="bi bi-caret-right-fill" href="#">Thông tin tuyển dụng </i></a></div>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown has-megamenu"><a class="nav-link dropdown-toggle" href="product.html" data-bs-toggle="dropdown">Sản phẩm </a>
+              <div class="dropdown-menu megamenu" role="menu">
+                <div class="container">
+                  <div class="row d-flex justify-content-between px-3">
+                    <div class="col-9">
+                      <div class="row d-flex justify-content-between">
+                        <div class="col-lg-4 mb-2"> 
+                          <div class="mb-1 text-uppercase d-flex align-items-center"><i class="bi bi-grid-fill text-primary mx-1"></i>
+                            <h6 class="display-7 fw-bold">Máy khoan đa năng</h6>
+                          </div>
+                          <ul class="mega_list">
+                            <li class="bi bi-caret-right-fill p-1"> <a class="text-secondary text-normal text-gray mega_item">Máy khoan CNC điện</a></li>
+                            <li class="bi bi-caret-right-fill p-1"> <a class="text-secondary text-normal text-gray mega_item">Máy phay đa năng 3R</a></li>
+                            <li class="bi bi-caret-right-fill p-1"> <a class="text-secondary text-normal text-gray mega_item">Máy hàn, cắt kim loại</a></li>
+                            <li class="bi bi-caret-right-fill p-1"> <a class="text-secondary text-normal text-gray mega_item">Máy in phun tích điện</a></li>
+                            <li class="bi bi-caret-right-fill p-1"> <a class="text-secondary text-normal text-gray mega_item">Máy ép gỗ chuẩn Nano</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-lg-4 mb-2"> 
+                          <div class="mb-1 text-uppercase d-flex align-items-center"><i class="bi bi-grid-fill text-primary mx-1"></i>
+                            <h6 class="display-7 fw-bold">Máy cắt plasmar</h6>
+                          </div>
+                          <ul class="mega_list">
+                            <li class="bi bi-caret-right-fill p-1"> <a class="text-secondary text-normal text-gray mega_item">Máy khoan CNC điện</a></li>
+                            <li class="bi bi-caret-right-fill p-1"> <a class="text-secondary text-normal text-gray mega_item">Máy phay đa năng 3R</a></li>
+                            <li class="bi bi-caret-right-fill p-1"> <a class="text-secondary text-normal text-gray mega_item">Máy hàn, cắt kim loại</a></li>
+                            <li class="bi bi-caret-right-fill p-1"> <a class="text-secondary text-normal text-gray mega_item">Máy in phun tích điện</a></li>
+                            <li class="bi bi-caret-right-fill p-1"> <a class="text-secondary text-normal text-gray mega_item">Máy ép gỗ chuẩn Nano</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-lg-4 mb-2"> 
+                          <div class="mb-1 text-uppercase d-flex align-items-center"><i class="bi bi-grid-fill text-primary mx-1"></i>
+                            <h6 class="display-7 fw-bold">Máy phay công nghiệp</h6>
+                          </div>
+                          <ul class="mega_list">
+                            <li class="bi bi-caret-right-fill p-1"> <a class="text-secondary text-normal text-gray mega_item">Máy khoan CNC điện</a></li>
+                            <li class="bi bi-caret-right-fill p-1"> <a class="text-secondary text-normal text-gray mega_item">Máy phay đa năng 3R</a></li>
+                            <li class="bi bi-caret-right-fill p-1"> <a class="text-secondary text-normal text-gray mega_item">Máy hàn, cắt kim loại</a></li>
+                            <li class="bi bi-caret-right-fill p-1"> <a class="text-secondary text-normal text-gray mega_item">Máy in phun tích điện</a></li>
+                            <li class="bi bi-caret-right-fill p-1"> <a class="text-secondary text-normal text-gray mega_item">Máy ép gỗ chuẩn Nano</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-lg-4 mb-2"> 
+                          <div class="mb-1 text-uppercase d-flex align-items-center"><i class="bi bi-grid-fill text-primary mx-1"></i>
+                            <h6 class="display-7 fw-bold">Máy ép nhựa thủ công</h6>
+                          </div>
+                          <ul class="mega_list">
+                            <li class="bi bi-caret-right-fill p-1"> <a class="text-secondary text-normal text-gray mega_item">Máy khoan CNC điện</a></li>
+                            <li class="bi bi-caret-right-fill p-1"> <a class="text-secondary text-normal text-gray mega_item">Máy phay đa năng 3R</a></li>
+                            <li class="bi bi-caret-right-fill p-1"> <a class="text-secondary text-normal text-gray mega_item">Máy hàn, cắt kim loại</a></li>
+                            <li class="bi bi-caret-right-fill p-1"> <a class="text-secondary text-normal text-gray mega_item">Máy in phun tích điện</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-lg-4 mb-2"> 
+                          <div class="mb-1 text-uppercase d-flex align-items-center"><i class="bi bi-grid-fill text-primary mx-1"></i>
+                            <h6 class="display-7 fw-bold">Máy uốn tôn điện</h6>
+                          </div>
+                          <ul class="mega_list">
+                            <li class="bi bi-caret-right-fill p-1"> <a class="text-secondary text-normal text-gray mega_item">Máy khoan CNC điện</a></li>
+                            <li class="bi bi-caret-right-fill p-1"> <a class="text-secondary text-normal text-gray mega_item">Máy phay đa năng 3R</a></li>
+                            <li class="bi bi-caret-right-fill p-1"> <a class="text-secondary text-normal text-gray mega_item">Máy hàn, cắt kim loại</a></li>
+                            <li class="bi bi-caret-right-fill p-1"> <a class="text-secondary text-normal text-gray mega_item">Máy in phun tích điện</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-lg-4 mb-2"> 
+                          <div class="mb-1 text-uppercase d-flex align-items-center"><i class="bi bi-grid-fill text-primary mx-1"></i>
+                            <h6 class="display-7 fw-bold">Máy nén khí CNC</h6>
+                          </div>
+                          <ul class="mega_list">
+                            <li class="bi bi-caret-right-fill p-1"> <a class="text-secondary text-normal text-gray mega_item">Máy khoan CNC điện</a></li>
+                            <li class="bi bi-caret-right-fill p-1"> <a class="text-secondary text-normal text-gray mega_item">Máy phay đa năng 3R</a></li>
+                            <li class="bi bi-caret-right-fill p-1"> <a class="text-secondary text-normal text-gray mega_item">Máy hàn, cắt kim loại</a></li>
+                            <li class="bi bi-caret-right-fill p-1"> <a class="text-secondary text-normal text-gray mega_item">Máy in phun tích điện</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3"><img src="../images/mega_img.jpg" alt="mega image"></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Tin khuyến mại </a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Dịch vụ </a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Liên hệ </a></li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown cart-dropdown"><a class="nav-link dropdown-toggle cart" href="shoppingCart.html" data-bs-toggle="dropdown"><i class="bi bi-basket cart__icon"><span class="cart__number">2</span></i></a>
+              <ul class="dropdown-menu dropdown-cart dropdown-menu-end" role="menu">
+                <div class="cart__item d-flex justify-content-between p-2"><img class="image-fluid cart__img me-3" src="../images/cart_item1.jpg" alt="cart item"/>
+                  <div class="description"> 
+                    <div class="name text-uppercase mb-2">Máy khoan Black decker</div>
+                    <div class="price"> <span class="quality">1 x </span><span class="text-danger fw-bold">1.250.000</span><span class="text-danger fw-bold ms-1">Đ</span></div>
+                  </div>
+                  <div class="btn_close"><i class="bi bi-x fw-bold"></i></div>
+                </div>
+                <div class="cart__line"></div>
+                <div class="cart__item d-flex justify-content-between p-2"><img class="image-fluid cart__img me-3" src="../images/cart_item2.jpg" alt="cart item"/>
+                  <div class="description"> 
+                    <div class="name text-uppercase mb-2">Máy khoan Black decker</div>
+                    <div class="price"> <span class="quality">1 x </span><span class="text-danger fw-bold">1.250.000</span><span class="text-danger fw-bold ms-1">Đ</span></div>
+                  </div>
+                  <div class="btn_close"><i class="bi bi-x fw-bold"></i></div>
+                </div>
+                <div class="cart__line"></div>
+                <div class="cart__item d-flex justify-content-between p-2"><img class="image-fluid cart__img me-3" src="../images/cart_item3.jpg" alt="cart item"/>
+                  <div class="description"> 
+                    <div class="name text-uppercase mb-2">Máy khoan Black decker</div>
+                    <div class="price"> <span class="quality">1 x </span><span class="text-danger fw-bold">1.250.000</span><span class="text-danger fw-bold ms-1">Đ</span></div>
+                  </div>
+                  <div class="btn_close"><i class="bi bi-x fw-bold"></i></div>
+                </div>
+                <div class="cart__line"></div>
+                <div class="total text-end mt-2 me-3"><span class="text-uppercase fw-bold">Tổng tiền</span><span class="text-danger fw-bold p-2">2.222.222</span><span class="text-danger fw-bold ms-1">Đ </span></div>
+                <div class="btn-checkout text-end p-3">
+                  <button class="btn btn-primary text-light">Thanh toán</button>
+                </div>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main> 
+      <div class="container"> 
+        <section class="mt-3" id="slider"> 
+          <div class="slider-container d-flex mt-3 row">
+            <div class="carousel slide col-lg-8 p-0" data-bs-ride="carousel" id="myCarousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active"><img class="img-fluid carousel__img w-100" src="../images/slider.jpg" alt="Slider image 1"/></div>
+                <div class="carousel-item"><img class="img-fluid carousel__img w-100" src="../images/slider.jpg" alt="Slider image 2"/></div>
+                <div class="carousel-item"><img class="img-fluid carousel__img w-100" src="../images/slider.jpg" alt="Slider image 3"/></div>
+              </div>
+              <div class="carousel-indicators d-flex justify-content-center mt-3 carousel__btn">
+                <button class="btn btn__slider__item active" type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" aria-current="aria-current" aria-label="Slide 1"></button>
+                <button class="btn btn__slider__item" type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button class="btn btn__slider__item" type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+            </div>
+            <div class="slider__content border col-lg-4">
+              <div class="content__item d-flex justify-content-between align-item-center p-4">
+                <div class="content__icon text-primary p-2 display-6"><i class="bi bi-airplane-fill"></i></div>
+                <div class="content ps-3">
+                  <div class="content__title p-1">
+                    <h6 class="text-uppercase">Miễn phí vận chuyển xccc</h6>
+                  </div>
+                  <div class="content__des p-1">
+                    <p>Chúng tôi vận chuyển miễn phí cho đơn hàng trị giá trên 1.000.000 VND</p>
+                  </div>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="content__item d-flex justify-content-between align-item-center p-4">
+                <div class="content__icon text-primary p-2 display-6"><i class="bi bi-arrow-repeat"></i></div>
+                <div class="content ps-3">
+                  <div class="content__title p-1">
+                    <h6 class="text-uppercase">Chính sách đổi trả</h6>
+                  </div>
+                  <div class="content__des p-1">
+                    <p>Nếu phát hiện lỗi của nhà sản xuất, chúng tôi sẽ đổi sản phẩm mới trong vòng 7 ngày đầu tiên</p>
+                  </div>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="content__item d-flex justify-content-between align-item-center p-4">
+                <div class="content__icon text-primary p-2 display-6"><i class="bi bi-gift-fill"></i></div>
+                <div class="content ps-3">
+                  <div class="content__title p-1">
+                    <h6 class="text-uppercase">Khuyến mại hàng tuần</h6>
+                  </div>
+                  <div class="content__des p-1">
+                    <p>Mỗi thứ 7 hàng tuần đều có chương trình giảm giá và khuyến mại lớn</p>
+                  </div>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="content__item d-flex justify-content-between align-item-center p-4">
+                <div class="content__icon text-primary p-2 display-6"><i class="bi bi-star-fill"></i></div>
+                <div class="content ps-3">
+                  <div class="content__title p-1">
+                    <h6 class="text-uppercase">Cam kết hàng chính hãng</h6>
+                  </div>
+                  <div class="content__des p-1">
+                    <p>Chúng tôi cam kết hàng chính hãng 100% đối với các loại sản phẩm</p>
+                  </div>
+                </div>
+              </div>
+              <div class="line"></div>
+            </div>
+          </div>
+        </section>
+        <section class="my-5" id="featured-products">
+          <div class="section__header d-flex align-items-center justify-content-between my-4">
+            <div class="header--left d-flex align-items-center justify-content-between"><i class="bi bi-grid-fill mx-2 p-1 text-primary"> </i>
+              <h4 class="text-uppercase fw-bold">Sản phẩm nổi bật </h4>
+            </div>
+            <div class="header--right d-flex align-items-center justify-content-between">
+              <div class="category-group gy-2 align-items-center justify-content-between d-none d-lg-flex">
+              </div>
+              <div class="icon-group"><i class="bi bi-caret-left-fill border"></i><i class="bi bi-caret-right-fill border"></i></div>
+            </div>
+          </div>
+          <div class="section__container">
+            <div class="row"> 
+              <div class="col-lg-3"> 
+                <div class="sidebar d-none d-lg-block">
+                  <ul class="sibebar__list">
+                    <li class="sidebar__item d-flex align-items-center justify-content-start py-3 ps-3 border"> <i class="bi bi-grid-fill mx-2 p-1 text-secondary sidebar__icon"></i>
+                      <p class="text-secondary ms-2 p-1 sidebar__text">Máy khoan cắt CMD</p>
+                    </li>
+                    <li class="sidebar__item d-flex align-items-center justify-content-start py-3 ps-3 border"> <i class="bi bi-grid-fill mx-2 p-1 text-secondary sidebar__icon"></i>
+                      <p class="text-secondary ms-2 p-1 sidebar__text">Máy phun khổ lớn</p>
+                    </li>
+                    <li class="sidebar__item d-flex align-items-center justify-content-start py-3 ps-3 border"> <i class="bi bi-grid-fill mx-2 p-1 text-secondary sidebar__icon"></i>
+                      <p class="text-secondary ms-2 p-1 sidebar__text">Máy quét Cannon 3D</p>
+                    </li>
+                    <li class="sidebar__item d-flex align-items-center justify-content-start py-3 ps-3 border"> <i class="bi bi-grid-fill mx-2 p-1 text-secondary sidebar__icon"></i>
+                      <p class="text-secondary ms-2 p-1 sidebar__text">Máy hàn điện Alumina</p>
+                    </li>
+                    <li class="sidebar__item d-flex align-items-center justify-content-start py-3 ps-3 border"> <i class="bi bi-grid-fill mx-2 p-1 text-secondary sidebar__icon"></i>
+                      <p class="text-secondary ms-2 p-1 sidebar__text">Máy khoan Decameta</p>
+                    </li>
+                    <li class="sidebar__item d-flex align-items-center justify-content-start py-3 ps-3 border"> <i class="bi bi-grid-fill mx-2 p-1 text-secondary sidebar__icon"></i>
+                      <p class="text-secondary ms-2 p-1 sidebar__text">Máy khoan đa năng CMD</p>
+                    </li>
+                    <li class="sidebar__item d-flex align-items-center justify-content-start py-3 ps-3 border"> <i class="bi bi-grid-fill mx-2 p-1 text-secondary sidebar__icon"></i>
+                      <p class="text-secondary ms-2 p-1 sidebar__text">Máy mài, tiện DC 12V</p>
+                    </li>
+                    <li class="sidebar__item d-flex align-items-center justify-content-start py-3 ps-3 border"> <i class="bi bi-grid-fill mx-2 p-1 text-secondary sidebar__icon"></i>
+                      <p class="text-secondary ms-2 p-1 sidebar__text">Máy khoan cắt CNC</p>
+                    </li>
+                    <li class="sidebar__item d-flex align-items-center justify-content-start py-3 ps-3 border"> <i class="bi bi-grid-fill mx-2 p-1 text-secondary sidebar__icon"></i>
+                      <p class="text-secondary ms-2 p-1 sidebar__text">Máy quay thông minh N3</p>
+                    </li>
+                    <li class="sidebar__item d-flex align-items-center justify-content-start py-3 ps-3 border"> <i class="bi bi-grid-fill mx-2 p-1 text-secondary sidebar__icon"></i>
+                      <p class="text-secondary ms-2 p-1 sidebar__text">Motor R34C đa dụng</p>
+                    </li>
+                    <li class="sidebar__item d-flex align-items-center justify-content-start py-3 ps-3 border"> <i class="bi bi-grid-fill mx-2 p-1 text-secondary sidebar__icon"></i>
+                      <p class="text-secondary ms-2 p-1 sidebar__text">Máy in laser màu 3D</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-9">
+                <div class="product">             
+                  <div class="row g-5">
+                    <div class="col-lg-4"><a class="product__item d-flex flex-column align-items-center px-1 py-4 h-100 justify-content-between bg-light" href="productDetail.html"><img class="img-fluid mb-2" src="../images/product1.jpg" alt="product image"/>
+                        <div class="description text-center mt-2"> 
+                          <div class="product__price text-danger fw-bold m-1">1.550.000 Đ</div>
+                          <div class="product__name text-uppercase fw-bold m-1">Máy khoan Black decker</div>
+                          <div class="product__review d-flex align-items-center justify-content-center m-1">
+                            <div class="star__icon text-primary"> <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i></div><span class="review__text">(12 đơn đánh giá )</span>
+                          </div>
+                        </div>
+                        <div class="product__btn d-flex justify-content-center m-2">
+                          <button class="btn btn-primary m-1 text-light">MUA NGAY </button>
+                          <button class="btn btn-secondary m-1 text-light">XEM CHI TIET</button>
+                        </div></a>
+                    </div>
+                    <div class="col-lg-4"><a class="product__item d-flex flex-column align-items-center px-1 py-4 h-100 justify-content-between bg-light" href="productDetail.html"><img class="img-fluid mb-2" src="../images/product2.jpg" alt="product image"/>
+                        <div class="description text-center mt-2"> 
+                          <div class="product__price text-danger fw-bold m-1">1.550.000 Đ</div>
+                          <div class="product__name text-uppercase fw-bold m-1">Máy khoan Black decker</div>
+                          <div class="product__review d-flex align-items-center justify-content-center m-1">
+                            <div class="star__icon text-primary"> <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i></div><span class="review__text">(12 đơn đánh giá )</span>
+                          </div>
+                        </div>
+                        <div class="product__btn d-flex justify-content-center m-2">
+                          <button class="btn btn-primary m-1 text-light">MUA NGAY </button>
+                          <button class="btn btn-secondary m-1 text-light">XEM CHI TIET</button>
+                        </div></a>
+                    </div>
+                    <div class="col-lg-4"><a class="product__item d-flex flex-column align-items-center px-1 py-4 h-100 justify-content-between bg-light" href="productDetail.html"><img class="img-fluid mb-2" src="../images/product3.jpg" alt="product image"/>
+                        <div class="description text-center mt-2"> 
+                          <div class="product__price text-danger fw-bold m-1">1.550.000 Đ</div>
+                          <div class="product__name text-uppercase fw-bold m-1">Máy khoan Black decker</div>
+                          <div class="product__review d-flex align-items-center justify-content-center m-1">
+                            <div class="star__icon text-primary"> <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i></div><span class="review__text">(12 đơn đánh giá )</span>
+                          </div>
+                        </div>
+                        <div class="product__btn d-flex justify-content-center m-2">
+                          <button class="btn btn-primary m-1 text-light">MUA NGAY </button>
+                          <button class="btn btn-secondary m-1 text-light">XEM CHI TIET</button>
+                        </div></a>
+                    </div>
+                    <div class="col-lg-4"><a class="product__item d-flex flex-column align-items-center px-1 py-4 h-100 justify-content-between bg-light" href="productDetail.html"><img class="img-fluid mb-2" src="../images/product4.jpg" alt="product image"/>
+                        <div class="description text-center mt-2"> 
+                          <div class="product__price text-danger fw-bold m-1">1.550.000 Đ</div>
+                          <div class="product__name text-uppercase fw-bold m-1">Máy khoan Black decker</div>
+                          <div class="product__review d-flex align-items-center justify-content-center m-1">
+                            <div class="star__icon text-primary"> <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i></div><span class="review__text">(12 đơn đánh giá )</span>
+                          </div>
+                        </div>
+                        <div class="product__btn d-flex justify-content-center m-2">
+                          <button class="btn btn-primary m-1 text-light">MUA NGAY </button>
+                          <button class="btn btn-secondary m-1 text-light">XEM CHI TIET</button>
+                        </div></a>
+                    </div>
+                    <div class="col-lg-4"><a class="product__item d-flex flex-column align-items-center px-1 py-4 h-100 justify-content-between bg-light" href="productDetail.html"><img class="img-fluid mb-2" src="../images/product5.jpg" alt="product image"/>
+                        <div class="description text-center mt-2"> 
+                          <div class="product__price text-danger fw-bold m-1">1.550.000 Đ</div>
+                          <div class="product__name text-uppercase fw-bold m-1">Máy khoan Black decker</div>
+                          <div class="product__review d-flex align-items-center justify-content-center m-1">
+                            <div class="star__icon text-primary"> <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i></div><span class="review__text">(12 đơn đánh giá )</span>
+                          </div>
+                        </div>
+                        <div class="product__btn d-flex justify-content-center m-2">
+                          <button class="btn btn-primary m-1 text-light">MUA NGAY </button>
+                          <button class="btn btn-secondary m-1 text-light">XEM CHI TIET</button>
+                        </div></a>
+                    </div>
+                    <div class="col-lg-4"><a class="product__item d-flex flex-column align-items-center px-1 py-4 h-100 justify-content-between bg-light" href="productDetail.html"><img class="img-fluid mb-2" src="../images/product6.jpg" alt="product image"/>
+                        <div class="description text-center mt-2"> 
+                          <div class="product__price text-danger fw-bold m-1">1.550.000 Đ</div>
+                          <div class="product__name text-uppercase fw-bold m-1">Máy khoan Black decker</div>
+                          <div class="product__review d-flex align-items-center justify-content-center m-1">
+                            <div class="star__icon text-primary"> <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i></div><span class="review__text">(12 đơn đánh giá )</span>
+                          </div>
+                        </div>
+                        <div class="product__btn d-flex justify-content-center m-2">
+                          <button class="btn btn-primary m-1 text-light">MUA NGAY </button>
+                          <button class="btn btn-secondary m-1 text-light">XEM CHI TIET</button>
+                        </div></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="my-5" id="new-product">
+          <div class="section__header d-flex align-items-center justify-content-between my-4">
+            <div class="header--left d-flex align-items-center justify-content-between"><i class="bi bi-grid-fill mx-2 p-1 text-primary"> </i>
+              <h4 class="text-uppercase fw-bold">Sản phẩm mới</h4>
+            </div>
+            <div class="header--right d-flex align-items-center justify-content-between">
+              <div class="category-group gy-2 align-items-center justify-content-between d-none d-lg-flex">
+                <div class="category__btn mx-1">
+                  <button class="btn btn-outline py-2">Máy khoan</button>
+                </div>
+                <div class="category__btn mx-1">
+                  <button class="btn btn-outline py-2">Máy in 3D</button>
+                </div>
+                <div class="category__btn mx-1">
+                  <button class="btn btn-outline py-2">Máy CNC</button>
+                </div>
+                <div class="category__btn mx-1">
+                  <button class="btn btn-outline py-2">Máy khác</button>
+                </div>
+              </div>
+              <div class="icon-group"><i class="bi bi-caret-left-fill border"></i><i class="bi bi-caret-right-fill border"></i></div>
+            </div>
+          </div>
+          <div class="section__container">
+            <div class="row g-5">
+              <div class="col-lg-4"><a class="product__item d-flex flex-column align-items-center px-1 py-4 h-100 justify-content-between bg-light" href="productDetail.html"><img class="img-fluid mb-2" src="../images/product10.jpg" alt="product image"/>
+                  <div class="description text-center mt-2"> 
+                    <div class="product__price text-danger fw-bold m-1">1.550.000 Đ</div>
+                    <div class="product__name text-uppercase fw-bold m-1">Máy khoan Black decker</div>
+                    <div class="product__review d-flex align-items-center justify-content-center m-1">
+                      <div class="star__icon text-primary"> <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i></div><span class="review__text">(12 đơn đánh giá )</span>
+                    </div>
+                  </div>
+                  <div class="product__btn d-flex justify-content-center m-2">
+                    <button class="btn btn-primary m-1 text-light">MUA NGAY </button>
+                    <button class="btn btn-secondary m-1 text-light">XEM CHI TIET</button>
+                  </div></a>
+              </div>
+              <div class="col-lg-4"><a class="product__item d-flex flex-column align-items-center px-1 py-4 h-100 justify-content-between bg-light" href="productDetail.html"><img class="img-fluid mb-2" src="../images/product8.jpg" alt="product image"/>
+                  <div class="description text-center mt-2"> 
+                    <div class="product__price text-danger fw-bold m-1">1.550.000 Đ</div>
+                    <div class="product__name text-uppercase fw-bold m-1">Máy khoan Black decker</div>
+                    <div class="product__review d-flex align-items-center justify-content-center m-1">
+                      <div class="star__icon text-primary"> <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i></div><span class="review__text">(12 đơn đánh giá )</span>
+                    </div>
+                  </div>
+                  <div class="product__btn d-flex justify-content-center m-2">
+                    <button class="btn btn-primary m-1 text-light">MUA NGAY </button>
+                    <button class="btn btn-secondary m-1 text-light">XEM CHI TIET</button>
+                  </div></a>
+              </div>
+              <div class="col-lg-4"><a class="product__item d-flex flex-column align-items-center px-1 py-4 h-100 justify-content-between bg-light" href="productDetail.html"><img class="img-fluid mb-2" src="../images/product11.jpg" alt="product image"/>
+                  <div class="description text-center mt-2"> 
+                    <div class="product__price text-danger fw-bold m-1">1.550.000 Đ</div>
+                    <div class="product__name text-uppercase fw-bold m-1">Máy khoan Black decker</div>
+                    <div class="product__review d-flex align-items-center justify-content-center m-1">
+                      <div class="star__icon text-primary"> <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i></div><span class="review__text">(12 đơn đánh giá )</span>
+                    </div>
+                  </div>
+                  <div class="product__btn d-flex justify-content-center m-2">
+                    <button class="btn btn-primary m-1 text-light">MUA NGAY </button>
+                    <button class="btn btn-secondary m-1 text-light">XEM CHI TIET</button>
+                  </div></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="sale-banner">
+          <div class="row"><img class="col-lg-6" src="../images/banner1.jpg" alt="banner"><img class="col-lg-6" src="../images/banner2.jpg" alt="banner"></div>
+        </section>
+        <section class="my-5" id="bestseller-product">
+          <div class="section__header d-flex align-items-center justify-content-between my-4">
+            <div class="header--left d-flex align-items-center justify-content-between"><i class="bi bi-grid-fill mx-2 p-1 text-primary"> </i>
+              <h4 class="text-uppercase fw-bold">Sản phẩm bán chạy</h4>
+            </div>
+            <div class="header--right d-flex align-items-center justify-content-between">
+              <div class="category-group gy-2 align-items-center justify-content-between d-none d-lg-flex">
+                <div class="category__btn mx-1">
+                  <button class="btn btn-outline py-2">Máy khoan</button>
+                </div>
+                <div class="category__btn mx-1">
+                  <button class="btn btn-outline py-2">Máy in 3D</button>
+                </div>
+                <div class="category__btn mx-1">
+                  <button class="btn btn-outline py-2">Máy CNC</button>
+                </div>
+                <div class="category__btn mx-1">
+                  <button class="btn btn-outline py-2">Máy khác</button>
+                </div>
+              </div>
+              <div class="icon-group"><i class="bi bi-caret-left-fill border"></i><i class="bi bi-caret-right-fill border"></i></div>
+            </div>
+          </div>
+          <div class="section__container">
+            <div class="row g-5">
+              <div class="col-md-4">
+                <div class="row gy-5">
+                  <div class="col-md-12"><a class="product__item d-flex flex-column align-items-center px-1 py-4 h-100 justify-content-between bg-light" href="productDetail.html"><img class="img-fluid mb-2" src="../images/product6.jpg" alt="product image"/>
+                      <div class="description text-center mt-2"> 
+                        <div class="product__price text-danger fw-bold m-1">1.550.000 Đ</div>
+                        <div class="product__name text-uppercase fw-bold m-1">Máy khoan Black decker</div>
+                        <div class="product__review d-flex align-items-center justify-content-center m-1">
+                          <div class="star__icon text-primary"> <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i></div><span class="review__text">(12 đơn đánh giá )</span>
+                        </div>
+                      </div>
+                      <div class="product__btn d-flex justify-content-center m-2">
+                        <button class="btn btn-primary m-1 text-light">MUA NGAY </button>
+                        <button class="btn btn-secondary m-1 text-light">XEM CHI TIET</button>
+                      </div></a>
+                  </div>
+                  <div class="col-md-12"><a class="product__item d-flex flex-column align-items-center px-1 py-4 h-100 justify-content-between bg-light" href="productDetail.html"><img class="img-fluid mb-2" src="../images/product3.jpg" alt="product image"/>
+                      <div class="description text-center mt-2"> 
+                        <div class="product__price text-danger fw-bold m-1">1.550.000 Đ</div>
+                        <div class="product__name text-uppercase fw-bold m-1">Máy khoan Black decker</div>
+                        <div class="product__review d-flex align-items-center justify-content-center m-1">
+                          <div class="star__icon text-primary"> <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i></div><span class="review__text">(12 đơn đánh giá )</span>
+                        </div>
+                      </div>
+                      <div class="product__btn d-flex justify-content-center m-2">
+                        <button class="btn btn-primary m-1 text-light">MUA NGAY </button>
+                        <button class="btn btn-secondary m-1 text-light">XEM CHI TIET</button>
+                      </div></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="product__item d-flex flex-column align-items-center px-1 py-4 h-100 justify-content-between"><img class="img-fluid w-100" src="../images/special_product.jpg" alt="product image"/>
+                  <div class="description text-center mt-2"> 
+                    <div class="product__price text-danger fw-bold m-1">1.550.000 Đ</div>
+                    <div class="product__name text-uppercase fw-bold m-1">Máy khoan Black decker</div>
+                    <div class="product__review d-flex align-items-center justify-content-center m-1">
+                      <div class="star__icon text-primary"> <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i></div><span>(12 đơn đánh giá )</span>
+                    </div>
+                  </div>
+                  <div class="product__btn d-flex justify-content-center m-1">
+                    <button class="btn btn-primary m-1 text-light">MUA NGAY </button>
+                    <button class="btn btn-secondary m-1 text-light">XEM CHI TIET</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="row gy-5">
+                  <div class="col-md-12"><a class="product__item d-flex flex-column align-items-center px-1 py-4 h-100 justify-content-between bg-light" href="productDetail.html"><img class="img-fluid mb-2" src="../images/product4.jpg" alt="product image"/>
+                      <div class="description text-center mt-2"> 
+                        <div class="product__price text-danger fw-bold m-1">1.550.000 Đ</div>
+                        <div class="product__name text-uppercase fw-bold m-1">Máy khoan Black decker</div>
+                        <div class="product__review d-flex align-items-center justify-content-center m-1">
+                          <div class="star__icon text-primary"> <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i></div><span class="review__text">(12 đơn đánh giá )</span>
+                        </div>
+                      </div>
+                      <div class="product__btn d-flex justify-content-center m-2">
+                        <button class="btn btn-primary m-1 text-light">MUA NGAY </button>
+                        <button class="btn btn-secondary m-1 text-light">XEM CHI TIET</button>
+                      </div></a>
+                  </div>
+                  <div class="col-md-12"><a class="product__item d-flex flex-column align-items-center px-1 py-4 h-100 justify-content-between bg-light" href="productDetail.html"><img class="img-fluid mb-2" src="../images/product5.jpg" alt="product image"/>
+                      <div class="description text-center mt-2"> 
+                        <div class="product__price text-danger fw-bold m-1">1.550.000 Đ</div>
+                        <div class="product__name text-uppercase fw-bold m-1">Máy khoan Black decker</div>
+                        <div class="product__review d-flex align-items-center justify-content-center m-1">
+                          <div class="star__icon text-primary"> <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i></div><span class="review__text">(12 đơn đánh giá )</span>
+                        </div>
+                      </div>
+                      <div class="product__btn d-flex justify-content-center m-2">
+                        <button class="btn btn-primary m-1 text-light">MUA NGAY </button>
+                        <button class="btn btn-secondary m-1 text-light">XEM CHI TIET</button>
+                      </div></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="banner"><img class="w-100" src="../images/banner3.jpg" alt=""></section>
+        <section class="my-5" id="bestseller-product">
+          <div class="section__header d-flex align-items-center justify-content-between my-4">
+            <div class="header--left d-flex align-items-center justify-content-between"><i class="bi bi-grid-fill mx-2 p-1 text-primary"> </i>
+              <h4 class="text-uppercase fw-bold">Hàng mới về</h4>
+            </div>
+            <div class="header--right d-flex align-items-center justify-content-between">
+              <div class="category-group gy-2 align-items-center justify-content-between d-none d-lg-flex">
+              </div>
+              <div class="icon-group"><i class="bi bi-caret-left-fill border"></i><i class="bi bi-caret-right-fill border"></i></div>
+            </div>
+          </div>
+          <div class="section__container">
+            <div class="row g-5">
+              <div class="col-lg-6"><a class="product__item d-flex align-items-center px-1 py-4 h-100 justify-content-around bg-light" href="productDetail.html"><img class="img-fluid me-5" src="../images/product7.jpg" alt="product image"/>
+                  <div class="description mt-2 p-2 d-flex flex-column justify-content-start align-items-start mt-2"> 
+                    <div class="product__name text-uppercase fw-bold m-1">Máy khoan Black decker</div>
+                    <div class="product__review d-flex align-items-center justify-content-center m-1">
+                      <div class="star__icon text-primary"> <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i></div><span class="review__text">(12 đơn đánh giá )</span>
+                    </div>
+                    <div class="product__des m-1"> <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, dignissimos? Labore quo vitae minus ex ipsum cumque facilis optio, distinctio iusto ipsa animi natus molestiae. Consectetur maxime exercitationem nihil quaerat?</span></div>
+                    <div class="product__price text-danger fw-bold m-1">1.550.000 Đ</div>
+                    <div class="product__btn--show d-flex justify-content-center m-1">
+                      <button class="btn btn-primary m-1 text-light">MUA NGAY </button>
+                      <button class="btn btn-secondary m-1 text-light">XEM CHI TIET</button>
+                    </div>
+                  </div></a>
+              </div>
+              <div class="col-lg-6"><a class="product__item d-flex align-items-center px-1 py-4 h-100 justify-content-around bg-light" href="productDetail.html"><img class="img-fluid me-5" src="../images/product8.jpg" alt="product image"/>
+                  <div class="description mt-2 p-2 d-flex flex-column justify-content-start align-items-start mt-2"> 
+                    <div class="product__name text-uppercase fw-bold m-1">Máy khoan Black decker</div>
+                    <div class="product__review d-flex align-items-center justify-content-center m-1">
+                      <div class="star__icon text-primary"> <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i></div><span class="review__text">(12 đơn đánh giá )</span>
+                    </div>
+                    <div class="product__des m-1"> <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, dignissimos? Labore quo vitae minus ex ipsum cumque facilis optio, distinctio iusto ipsa animi natus molestiae. Consectetur maxime exercitationem nihil quaerat?</span></div>
+                    <div class="product__price text-danger fw-bold m-1">1.550.000 Đ</div>
+                    <div class="product__btn--show d-flex justify-content-center m-1">
+                      <button class="btn btn-primary m-1 text-light">MUA NGAY </button>
+                      <button class="btn btn-secondary m-1 text-light">XEM CHI TIET</button>
+                    </div>
+                  </div></a>
+              </div>
+              <div class="col-lg-6"><a class="product__item d-flex align-items-center px-1 py-4 h-100 justify-content-around bg-light" href="productDetail.html"><img class="img-fluid me-5" src="../images/product9.jpg" alt="product image"/>
+                  <div class="description mt-2 p-2 d-flex flex-column justify-content-start align-items-start mt-2"> 
+                    <div class="product__name text-uppercase fw-bold m-1">Máy khoan Black decker</div>
+                    <div class="product__review d-flex align-items-center justify-content-center m-1">
+                      <div class="star__icon text-primary"> <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i></div><span class="review__text">(12 đơn đánh giá )</span>
+                    </div>
+                    <div class="product__des m-1"> <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, dignissimos? Labore quo vitae minus ex ipsum cumque facilis optio, distinctio iusto ipsa animi natus molestiae. Consectetur maxime exercitationem nihil quaerat?</span></div>
+                    <div class="product__price text-danger fw-bold m-1">1.550.000 Đ</div>
+                    <div class="product__btn--show d-flex justify-content-center m-1">
+                      <button class="btn btn-primary m-1 text-light">MUA NGAY </button>
+                      <button class="btn btn-secondary m-1 text-light">XEM CHI TIET</button>
+                    </div>
+                  </div></a>
+              </div>
+              <div class="col-lg-6"><a class="product__item d-flex align-items-center px-1 py-4 h-100 justify-content-around bg-light" href="productDetail.html"><img class="img-fluid me-5" src="../images/product10.jpg" alt="product image"/>
+                  <div class="description mt-2 p-2 d-flex flex-column justify-content-start align-items-start mt-2"> 
+                    <div class="product__name text-uppercase fw-bold m-1">Máy khoan Black decker</div>
+                    <div class="product__review d-flex align-items-center justify-content-center m-1">
+                      <div class="star__icon text-primary"> <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i></div><span class="review__text">(12 đơn đánh giá )</span>
+                    </div>
+                    <div class="product__des m-1"> <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, dignissimos? Labore quo vitae minus ex ipsum cumque facilis optio, distinctio iusto ipsa animi natus molestiae. Consectetur maxime exercitationem nihil quaerat?</span></div>
+                    <div class="product__price text-danger fw-bold m-1">1.550.000 Đ</div>
+                    <div class="product__btn--show d-flex justify-content-center m-1">
+                      <button class="btn btn-primary m-1 text-light">MUA NGAY </button>
+                      <button class="btn btn-secondary m-1 text-light">XEM CHI TIET</button>
+                    </div>
+                  </div></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="brand"> 
+          <div class="row d-flex justify-content-center py-4">
+            <div class="col-lg-2 col-sm-12 text-center"><img src="../images/brand1.jpg" alt="brand image"></div>
+            <div class="col-lg-2 col-sm-12 text-center"><img src="../images/brand2.jpg" alt="brand image"></div>
+            <div class="col-lg-2 col-sm-12 text-center"><img src="../images/brand3.jpg" alt="brand image"></div>
+            <div class="col-lg-2 col-sm-12 text-center"><img src="../images/brand4.jpg" alt="brand image"></div>
+            <div class="col-lg-2 col-sm-12 text-center"><img src="../images/brand5.jpg" alt="brand image"></div>
+          </div>
+          <div class="pre__btn"><i class="bi bi-chevron-left"></i></div>
+          <div class="next__btn"><i class="bi bi-chevron-right"></i></div>
+        </section>
+      </div>
+      <section id="newsletter"> 
+        <div class="container text-center p-5">
+          <div class="letter p-2">
+            <h2 class="text-light">Đăng ký để nhận tin tức khuyến mãi mỗi tuần</h2>
+          </div>
+          <div class="letter__form p-3">
+            <form action="">
+              <div class="d-flex justify-content-center">
+                <input class="form-control rounded-pill mx-3 p-2" type="email" placeholder="Nhập địa chỉ email của bạn ..." name="email">
+                <button class="btn btn-primary rounded-pill display-5 text-light register__btn p-2 text-uppercase" type="submit">Đăng ký</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdropLabel">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel"> </h5>
+              <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center px-5">
+              <h5 class="m-2">Đăng kí nhận tin tức của chúng tôi</h5>
+              <p>Bạn muốn nhanh chóng nhận được tin tức khuyến mãi của chúng tôi hàng tuần ? </p>
+              <p>Hãy đăng kí theo form dưới đây</p>
+              <input class="form-control py-3 mt-2" type="email" id="modalInput" placeholder="Nhâp email của bạn vào đây .."/>
+              <button class="btn btn-primary w-100 py-3 mt-3 text-uppercase text-light fw-bold">Đăng ký </button>
+            </div>
+            <div class="modal-checkbox px-5 pb-3">
+              <div class="form-check text-secondary">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"/>
+                <label class="form-check-label" for="defaultCheck1">Không hiện tại thông báo này </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row footer__top pt-5">
+          <div class="col-lg-3">
+                <div class="footer__item">
+                  <div class="title d-flex justify-content-start align-items-center"><i class="bi bi-grid-fill text-primary mx-2"></i>
+                    <h5>Về chúng tôi</h5>
+                  </div>
+                  <ul class="p-2">
+                    <li class="d-flex py-2"><span>Công ty cổ phần công nghệ DKT đã và đang khẳng định vị trí hàng đầu trong lĩnh vực :Thương mại điện tử</span>
+                    </li>
+                    <li class="d-flex py-2"><i class="mx-2 bi bi-geo-alt-fill p-1"></i><span>Tầng 4- Tòa nhà Hanoi Group 442 Đội Cấn Ba Đình - Hà Nội</span>
+                    </li>
+                    <li class="d-flex py-2"><i class="mx-2 bi bi-envelope-fill p-1"></i><span>support@dkt.com.vn</span>
+                    </li>
+                    <li class="d-flex py-2"><i class="mx-2 bi bi-phone-fill p-1"></i><span>(84-4) 56565668 - (84-4) 37868904</span>
+                    </li>
+                  </ul>
+                </div>
+          </div>
+          <div class="col-lg-9">
+            <div class="row"> 
+              <div class="col-lg-3">
+                    <div class="footer__item">
+                      <div class="title d-flex justify-content-start align-items-center"><i class="bi bi-grid-fill text-primary mx-2"></i>
+                        <h5>Chính sách</h5>
+                      </div>
+                      <ul class="p-2">
+                        <li class="d-flex py-2"><span>Chính sách giao hàng</span>
+                        </li>
+                        <li class="d-flex py-2"><span>Chính sách đổi sản phẩm </span>
+                        </li>
+                        <li class="d-flex py-2"><span>Chính sách bảo hành </span>
+                        </li>
+                        <li class="d-flex py-2"><span>Chính sách trả góp</span>
+                        </li>
+                        <li class="d-flex py-2"><span>Giới thiệu hàng đổi trả</span>
+                        </li>
+                        <li class="d-flex py-2"><span>Vận chuyển miễn phí </span>
+                        </li>
+                      </ul>
+                    </div>
+              </div>
+              <div class="col-lg-3">
+                    <div class="footer__item">
+                      <div class="title d-flex justify-content-start align-items-center"><i class="bi bi-grid-fill text-primary mx-2"></i>
+                        <h5>Dịch vụ &amp; hỗ trợ</h5>
+                      </div>
+                      <ul class="p-2">
+                        <li class="d-flex py-2"><span>Hệ thống cửa hàng</span>
+                        </li>
+                        <li class="d-flex py-2"><span>Hướng dẫn mua hàng</span>
+                        </li>
+                        <li class="d-flex py-2"><span>Hướng dẫn thanh toán</span>
+                        </li>
+                        <li class="d-flex py-2"><span>Tích điểm đổi thưởng</span>
+                        </li>
+                        <li class="d-flex py-2"><span>Dịch vụ đổi trả hàng</span>
+                        </li>
+                        <li class="d-flex py-2"><span>Câu hỏi thường gặp</span>
+                        </li>
+                      </ul>
+                    </div>
+              </div>
+              <div class="col-lg-3">
+                    <div class="footer__item">
+                      <div class="title d-flex justify-content-start align-items-center"><i class="bi bi-grid-fill text-primary mx-2"></i>
+                        <h5>Tin tức - sự kiện </h5>
+                      </div>
+                      <ul class="p-2">
+                        <li class="d-flex py-2"><span>Tin tức mới nhất</span>
+                        </li>
+                        <li class="d-flex py-2"><span>Tin tức khuyến mại</span>
+                        </li>
+                        <li class="d-flex py-2"><span>Tuyển dụng , đãi ngộ</span>
+                        </li>
+                        <li class="d-flex py-2"><span>Download tài liệu</span>
+                        </li>
+                        <li class="d-flex py-2"><span>Chương trình đối tác</span>
+                        </li>
+                        <li class="d-flex py-2"><span>Nhà phát triển ứng dụng</span>
+                        </li>
+                      </ul>
+                    </div>
+              </div>
+              <div class="col-lg-3">
+                    <div class="footer__item">
+                      <div class="title d-flex justify-content-start align-items-center"><i class="bi bi-grid-fill text-primary mx-2"></i>
+                        <h5>Kết nối </h5>
+                      </div>
+                      <ul class="p-2">
+                        <li class="d-flex py-2"><i class="mx-2 bi bi-facebook p-1"></i><span>Facebook</span>
+                        </li>
+                        <li class="d-flex py-2"><i class="mx-2 bi bi-twitter p-1"></i><span>Twitter</span>
+                        </li>
+                        <li class="d-flex py-2"><i class="mx-2 bi bi-google p-1"></i><span>Google</span>
+                        </li>
+                        <li class="d-flex py-2"><i class="mx-2 bi bi-skype p-1"></i><span>Skype</span>
+                        </li>
+                        <li class="d-flex py-2"><i class="mx-2 bi bi-instagram p-1"></i><span>Instagram</span>
+                        </li>
+                      </ul>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row footer__middle my-4"> 
+          <div class="col-lg-6"> 
+            <h6 class="display-7 p-3">Thanh toán : </h6>
+            <div class="row gy-3 d-flex justify-content-start">
+              <div class="col-5 col-lg-3"><img src="../images/card1.jpg" alt="card image"></div>
+              <div class="col-5 col-lg-3"><img src="../images/card2.jpg" alt="card image"></div>
+              <div class="col-5 col-lg-3"><img src="../images/card3.jpg" alt="card image"></div>
+              <div class="col-5 col-lg-3"><img src="../images/card4.jpg" alt="card image"></div>
+              <div class="col-5 col-lg-3"><img src="../images/card5.jpg" alt="card image"></div>
+              <div class="col-5 col-lg-3"><img src="../images/card6.jpg" alt="card image"></div>
+              <div class="col-5 col-lg-3"><img src="../images/card7.jpg" alt="card image"></div>
+              <div class="col-5 col-lg-3"><img src="../images/card8.jpg" alt="card image"></div>
+            </div>
+          </div>
+          <div class="col-lg-6"> 
+            <h6 class="display-7 p-3">Giải đáp nhanh :</h6>
+            <div class="row p-3">
+                  <div class="col-lg-6 d-flex justify-content-start align-items-center p-3"><i class="text-primary footer__icon me-3 bi bi-telephone-fill"></i>
+                    <div class="text">
+                      <p>Tư vấn miễn phí</p>
+                      <h5 class="fw-bold text-danger">1900 650 650</h5>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 d-flex justify-content-start align-items-center p-3"><i class="text-primary footer__icon me-3 bi bi-wechat"></i>
+                    <div class="text">
+                      <p>Góp ý - phản hồi - thắc mắc</p>
+                      <h5 class="fw-bold text-danger">1900 650 650</h5>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom bg-dark">
+        <div class="container">
+          <div class="row d-flex justify-content-between p-2">
+            <div class="footer__left col-lg-6 d-flex">
+              <p>Bản quyền thuộc về <span class="text-light">DesignTeam.  </span></p>
+              <p> Phát triển bởi <span class="text-light">Bizweb.</span></p>
+            </div>
+            <div class="footer__right col-lg-6"> 
+              <ul class="d-flex"> 
+                <li class="mx-2">Trang chủ</li>
+                <li class="mx-2">Giới thiệu</li>
+                <li class="mx-2">Sản phẩm</li>
+                <li class="mx-2">Tin khuyến mại</li>
+                <li class="mx-2">Dịch vụ</li>
+                <li class="mx-2">Liên hệ</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="../scripts/main.js"></script>
+</html>

@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website - About</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <header class="container">
+      <div class="header__top d-flex justify-content-between">
+        <div class="header__social d-flex d-none d-lg-block">
+          <ul class="d-flex">
+            <li class="p-3"><i class="bi bi-facebook"></i></li>
+            <li class="p-3"><i class="bi bi-google"></i></li>
+            <li class="p-3"><i class="bi bi-instagram"></i></li>
+            <li class="p-3"><i class="bi bi-twitter"></i></li>
+          </ul>
+        </div>
+        <div class="header__login d-flex align-items-center">
+          <a class="login text-uppercase text-dark p-4" href="sign-in.html"
+            >Đăng nhập </a
+          ><a class="register text-uppercase text-dark p-4" href="sign-up.html"
+            >Đăng ký</a
+          >
+        </div>
+      </div>
+      <div class="header__bottom w-100">
+        <div
+          class="d-flex align-items-center justify-content-between flex-lg-row flex-column"
+        >
+          <div class="header__logo">
+            <a href="home.html"></a>
+            <button
+              class="btn"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+            >
+              <img class="img-fluid" src="../images/lgo.jpg" alt="logo image" />
+            </button>
+          </div>
+          <div class="hotline d-none d-lg-block">
+            <h5 class="text-primary pb-1">HOTLINE</h5>
+            <p>(04) 9500 9650 - (04) 9500 8850</p>
+          </div>
+          <div class="hotline d-none d-lg-block">
+            <h5 class="text-primary pb-1">ĐẶT HÀNG NHANH:</h5>
+            <p>(04) 9500 9650 - (04) 9500 8850</p>
+          </div>
+          <div class="header__search">
+            <form
+              class="input-group border rounded-pill d-flex align-items-center justify-content-center w-100"
+            >
+              <input
+                class="form-control text-secondary border-0 display-4"
+                type="search"
+                placeholder="Tìm kiếm ..."
+                aria-describedby="button-addon3"
+                id="searchInput"
+              />
+              <div class="input-group-append border-0"></div>
+              <button
+                class="btn btn-link"
+                id="button-addon3"
+                type="button"
+                aria-label="Search"
+              >
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary mt-2">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main_nav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main_nav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="home.html">Trang chủ </a>
+            </li>
+            <li class="nav-item dropdown custom-dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="outside"
+                >Giới thiệu</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <div class="dropdown-item">
+                    <a
+                      ><i class="bi bi-caret-right-fill" href="#"
+                        >Giới thiệu chung</i
+                      ></a
+                    >
+                  </div>
+                </li>
+                <li class="dropend dropdownItem">
+                  <a
+                    class="dropdown-item dropdown-toggle"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside"
+                    ><i class="bi bi-caret-right-fill">Hệ thống cửa hàng</i></a
+                  >
+                  <ul class="dropdown-menu">
+                    <li>
+                      <div class="dropdown-item">
+                        <a
+                          ><i class="bi bi-caret-right-fill" href="#"
+                            >Hệ thống cửa hàng A1</i
+                          ></a
+                        >
+                      </div>
+                    </li>
+                    <li>
+                      <div class="dropdown-item">
+                        <a
+                          ><i class="bi bi-caret-right-fill" href="#"
+                            >Hệ thống cửa hàng A2</i
+                          ></a
+                        >
+                      </div>
+                    </li>
+                    <li>
+                      <div class="dropdown-item">
+                        <a
+                          ><i class="bi bi-caret-right-fill" href="#"
+                            >Hệ thống cửa hàng A3</i
+                          ></a
+                        >
+                      </div>
+                    </li>
+                    <li>
+                      <div class="dropdown-item">
+                        <a
+                          ><i class="bi bi-caret-right-fill" href="#"
+                            >Hệ thống cửa hàng A4</i
+                          ></a
+                        >
+                      </div>
+                    </li>
+                    <li>
+                      <div class="dropdown-item">
+                        <a
+                          ><i class="bi bi-caret-right-fill" href="#"
+                            >Hệ thống cửa hàng A5</i
+                          ></a
+                        >
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="dropdown-item">
+                    <a
+                      ><i class="bi bi-caret-right-fill" href="#"
+                        >Chính sách ưu đãi</i
+                      ></a
+                    >
+                  </div>
+                </li>
+                <li>
+                  <div class="dropdown-item">
+                    <a
+                      ><i class="bi bi-caret-right-fill" href="#"
+                        >Thông tin tuyển dụng
+                      </i></a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown has-megamenu">
+              <a
+                class="nav-link dropdown-toggle"
+                href="product.html"
+                data-bs-toggle="dropdown"
+                >Sản phẩm
+              </a>
+              <div class="dropdown-menu megamenu" role="menu">
+                <div class="container">
+                  <div class="row d-flex justify-content-between px-3">
+                    <div class="col-9">
+                      <div class="row d-flex justify-content-between">
+                        <div class="col-lg-4 mb-2">
+                          <div
+                            class="mb-1 text-uppercase d-flex align-items-center"
+                          >
+                            <i class="bi bi-grid-fill text-primary mx-1"></i>
+                            <h6 class="display-7 fw-bold">Máy khoan đa năng</h6>
+                          </div>
+                          <ul class="mega_list">
+                            <li class="bi bi-caret-right-fill p-1">
+                              <a
+                                class="text-secondary text-normal text-gray mega_item"
+                                >Máy khoan CNC điện</a
+                              >
+                            </li>
+                            <li class="bi bi-caret-right-fill p-1">
+                              <a
+                                class="text-secondary text-normal text-gray mega_item"
+                                >Máy phay đa năng 3R</a
+                              >
+                            </li>
+                            <li class="bi bi-caret-right-fill p-1">
+                              <a
+                                class="text-secondary text-normal text-gray mega_item"
+                                >Máy hàn, cắt kim loại</a
+                              >
+                            </li>
+                            <li class="bi bi-caret-right-fill p-1">
+                              <a
+                                class="text-secondary text-normal text-gray mega_item"
+                                >Máy in phun tích điện</a
+                              >
+                            </li>
+                            <li class="bi bi-caret-right-fill p-1">
+                              <a
+                                class="text-secondary text-normal text-gray mega_item"
+                                >Máy ép gỗ chuẩn Nano</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-lg-4 mb-2">
+                          <div
+                            class="mb-1 text-uppercase d-flex align-items-center"
+                          >
+                            <i class="bi bi-grid-fill text-primary mx-1"></i>
+                            <h6 class="display-7 fw-bold">Máy cắt plasmar</h6>
+                          </div>
+                          <ul class="mega_list">
+                            <li class="bi bi-caret-right-fill p-1">
+                              <a
+                                class="text-secondary text-normal text-gray mega_item"
+                                >Máy khoan CNC điện</a
+                              >
+                            </li>
+                            <li class="bi bi-caret-right-fill p-1">
+                              <a
+                                class="text-secondary text-normal text-gray mega_item"
+                                >Máy phay đa năng 3R</a
+                              >
+                            </li>
+                            <li class="bi bi-caret-right-fill p-1">
+                              <a
+                                class="text-secondary text-normal text-gray mega_item"
+                                >Máy hàn, cắt kim loại</a
+                              >
+                            </li>
+                            <li class="bi bi-caret-right-fill p-1">
+                              <a
+                                class="text-secondary text-normal text-gray mega_item"
+                                >Máy in phun tích điện</a
+                              >
+                            </li>
+                            <li class="bi bi-caret-right-fill p-1">
+                              <a
+                                class="text-secondary text-normal text-gray mega_item"
+                                >Máy ép gỗ chuẩn Nano</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-lg-4 mb-2">
+                          <div
+                            class="mb-1 text-uppercase d-flex align-items-center"
+                          >
+                            <i class="bi bi-grid-fill text-primary mx-1"></i>
+                            <h6 class="display-7 fw-bold">
+                              Máy phay công nghiệp
+                            </h6>
+                          </div>
+                          <ul class="mega_list">
+                            <li class="bi bi-caret-right-fill p-1">
+                              <a
+                                class="text-secondary text-normal text-gray mega_item"
+                                >Máy khoan CNC điện</a
+                              >
+                            </li>
+                            <li class="bi bi-caret-right-fill p-1">
+                              <a
+                                class="text-secondary text-normal text-gray mega_item"
+                                >Máy phay đa năng 3R</a
+                              >
+                            </li>
+                            <li class="bi bi-caret-right-fill p-1">
+                              <a
+                                class="text-secondary text-normal text-gray mega_item"
+                                >Máy hàn, cắt kim loại</a
+                              >
+                            </li>
+                            <li class="bi bi-caret-right-fill p-1">
+                              <a
+                                class="text-secondary text-normal text-gray mega_item"
+                                >Máy in phun tích điện</a
+                              >
+                            </li>
+                            <li class="bi bi-caret-right-fill p-1">
+                              <a
+                                class="text-secondary text-normal text-gray mega_item"
+                                >Máy ép gỗ chuẩn Nano</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-lg-4 mb-2">
+                          <div
+                            class="mb-1 text-uppercase d-flex align-items-center"
+                          >
+                            <i class="bi bi-grid-fill text-primary mx-1"></i>
+                            <h6 class="display-7 fw-bold">
+                              Máy ép nhựa thủ công
+                            </h6>
+                          </div>
+                          <ul class="mega_list">
+                            <li class="bi bi-caret-right-fill p-1">
+                              <a
+                                class="text-secondary text-normal text-gray mega_item"
+                                >Máy khoan CNC điện</a
+                              >
+                            </li>
+                            <li class="bi bi-caret-right-fill p-1">
+                              <a
+                                class="text-secondary text-normal text-gray mega_item"
+                                >Máy phay đa năng 3R</a
+                              >
+                            </li>
+                            <li class="bi bi-caret-right-fill p-1">
+                              <a
+                                class="text-secondary text-normal text-gray mega_item"
+                                >Máy hàn, cắt kim loại</a
+                              >
+                            </li>
+                            <li class="bi bi-caret-right-fill p-1">
+                              <a
+                                class="text-secondary text-normal text-gray mega_item"
+                                >Máy in phun tích điện</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-lg-4 mb-2">
+                          <div
+                            class="mb-1 text-uppercase d-flex align-items-center"
+                          >
+                            <i class="bi bi-grid-fill text-primary mx-1"></i>
+                            <h6 class="display-7 fw-bold">Máy uốn tôn điện</h6>
+                          </div>
+                          <ul class="mega_list">
+                            <li class="bi bi-caret-right-fill p-1">
+                              <a
+                                class="text-secondary text-normal text-gray mega_item"
+                                >Máy khoan CNC điện</a
+                              >
+                            </li>
+                            <li class="bi bi-caret-right-fill p-1">
+                              <a
+                                class="text-secondary text-normal text-gray mega_item"
+                                >Máy phay đa năng 3R</a
+                              >
+                            </li>
+                            <li class="bi bi-caret-right-fill p-1">
+                              <a
+                                class="text-secondary text-normal text-gray mega_item"
+                                >Máy hàn, cắt kim loại</a
+                              >
+                            </li>
+                            <li class="bi bi-caret-right-fill p-1">
+                              <a
+                                class="text-secondary text-normal text-gray mega_item"
+                                >Máy in phun tích điện</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-lg-4 mb-2">
+                          <div
+                            class="mb-1 text-uppercase d-flex align-items-center"
+                          >
+                            <i class="bi bi-grid-fill text-primary mx-1"></i>
+                            <h6 class="display-7 fw-bold">Máy nén khí CNC</h6>
+                          </div>
+                          <ul class="mega_list">
+                            <li class="bi bi-caret-right-fill p-1">
+                              <a
+                                class="text-secondary text-normal text-gray mega_item"
+                                >Máy khoan CNC điện</a
+                              >
+                            </li>
+                            <li class="bi bi-caret-right-fill p-1">
+                              <a
+                                class="text-secondary text-normal text-gray mega_item"
+                                >Máy phay đa năng 3R</a
+                              >
+                            </li>
+                            <li class="bi bi-caret-right-fill p-1">
+                              <a
+                                class="text-secondary text-normal text-gray mega_item"
+                                >Máy hàn, cắt kim loại</a
+                              >
+                            </li>
+                            <li class="bi bi-caret-right-fill p-1">
+                              <a
+                                class="text-secondary text-normal text-gray mega_item"
+                                >Máy in phun tích điện</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <img src="../images/mega_img.jpg" alt="mega image" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Tin khuyến mại </a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Dịch vụ </a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Liên hệ </a></li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown cart-dropdown">
+              <a
+                class="nav-link dropdown-toggle cart"
+                href="shoppingCart.html"
+                data-bs-toggle="dropdown"
+                ><i class="bi bi-basket cart__icon"
+                  ><span class="cart__number total-count"></span></i
+              ></a>
+              <ul
+                class="dropdown-menu dropdown-cart dropdown-menu-end"
+                role="menu"
+              >
+                <div class="cart-container"></div>
+                <div class="total text-end mt-2 me-3">
+                  <span class="text-uppercase fw-bold">Tổng tiền</span
+                  ><span class="text-danger fw-bold p-2 total-cart"></span
+                  ><span class="text-danger fw-bold ms-1">Đ </span>
+                  <span class="vat d-none"></span>
+                  <span class="checkout__total d-none"></span>
+                </div>
+
+                <div class="btn-checkout text-end p-3">
+                  <button class="btn btn-primary">
+                    <a class="text-light" href="shoppingCart.html"
+                      >Thanh toán</a
+                    >
+                  </button>
+                </div>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div
+        class="modal fade"
+        id="staticBackdrop"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel"></h5>
+              <button
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body text-center px-5">
+              <h5 class="m-2">Đăng kí nhận tin tức của chúng tôi</h5>
+              <p>
+                Bạn muốn nhanh chóng nhận được tin tức khuyến mãi của chúng tôi
+                hàng tuần ?
+              </p>
+              <p>Hãy đăng kí theo form dưới đây</p>
+              <input
+                class="form-control py-3 mt-2"
+                type="email"
+                id="modalInput"
+                placeholder="Nhâp email của bạn vào đây .."
+              />
+              <button
+                class="btn btn-primary w-100 py-3 mt-3 text-uppercase text-light fw-bold"
+              >
+                Đăng ký
+              </button>
+            </div>
+            <div class="modal-checkbox px-5 pb-3">
+              <div class="form-check text-secondary">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="defaultCheck1"
+                />
+                <label class="form-check-label" for="defaultCheck1"
+                  >Không hiện tại thông báo này
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="productPage">
+        <div class="container">
+          <div class="page__header d-flex my-4 align-items-center">
+            <div class="previous__page">Trang chủ</div>
+            <div class="page__icon"><i class="bi bi-caret-right-fill"></i></div>
+            <div class="current__page fw-bold">Danh mục sản phẩm</div>
+          </div>
+          <div class="page__container">
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="sidebar d-none d-lg-block">
+                  <ul class="sibebar__list">
+                    <div
+                      class="sidebarHeader d-flex align-items-center border text-primary py-3 ps-3 border bg-secondary text-uppercase"
+                    >
+                      <i class="bi sidebar__icon mx-2 p-1 fw-bold bi-list"></i>
+                      <p>Danh mục sản phẩm</p>
+                    </div>
+                    <li
+                      class="sidebar__item d-flex align-items-center justify-content-start py-3 ps-3 border"
+                    >
+                      <i
+                        class="bi bi-grid-fill mx-2 p-1 text-secondary sidebar__icon"
+                      ></i>
+                      <p class="text-secondary ms-2 p-1 sidebar__text">
+                        Máy khoan cắt CMD
+                      </p>
+                    </li>
+                    <li
+                      class="sidebar__item d-flex align-items-center justify-content-start py-3 ps-3 border"
+                    >
+                      <i
+                        class="bi bi-grid-fill mx-2 p-1 text-secondary sidebar__icon"
+                      ></i>
+                      <p class="text-secondary ms-2 p-1 sidebar__text">
+                        Máy phun khổ lớn
+                      </p>
+                    </li>
+                    <li
+                      class="sidebar__item d-flex align-items-center justify-content-start py-3 ps-3 border"
+                    >
+                      <i
+                        class="bi bi-grid-fill mx-2 p-1 text-secondary sidebar__icon"
+                      ></i>
+                      <p class="text-secondary ms-2 p-1 sidebar__text">
+                        Máy quét Cannon 3D
+                      </p>
+                    </li>
+                    <li
+                      class="sidebar__item d-flex align-items-center justify-content-start py-3 ps-3 border"
+                    >
+                      <i
+                        class="bi bi-grid-fill mx-2 p-1 text-secondary sidebar__icon"
+                      ></i>
+                      <p class="text-secondary ms-2 p-1 sidebar__text">
+                        Máy hàn điện Alumina
+                      </p>
+                    </li>
+                    <li
+                      class="sidebar__item d-flex align-items-center justify-content-start py-3 ps-3 border"
+                    >
+                      <i
+                        class="bi bi-grid-fill mx-2 p-1 text-secondary sidebar__icon"
+                      ></i>
+                      <p class="text-secondary ms-2 p-1 sidebar__text">
+                        Máy khoan Decameta
+                      </p>
+                    </li>
+                    <li
+                      class="sidebar__item d-flex align-items-center justify-content-start py-3 ps-3 border"
+                    >
+                      <i
+                        class="bi bi-grid-fill mx-2 p-1 text-secondary sidebar__icon"
+                      ></i>
+                      <p class="text-secondary ms-2 p-1 sidebar__text">
+                        Máy khoan đa năng CMD
+                      </p>
+                    </li>
+                    <li
+                      class="sidebar__item d-flex align-items-center justify-content-start py-3 ps-3 border"
+                    >
+                      <i
+                        class="bi bi-grid-fill mx-2 p-1 text-secondary sidebar__icon"
+                      ></i>
+                      <p class="text-secondary ms-2 p-1 sidebar__text">
+                        Máy mài, tiện DC 12V
+                      </p>
+                    </li>
+                    <li
+                      class="sidebar__item d-flex align-items-center justify-content-start py-3 ps-3 border"
+                    >
+                      <i
+                        class="bi bi-grid-fill mx-2 p-1 text-secondary sidebar__icon"
+                      ></i>
+                      <p class="text-secondary ms-2 p-1 sidebar__text">
+                        Máy khoan cắt CNC
+                      </p>
+                    </li>
+                    <li
+                      class="sidebar__item d-flex align-items-center justify-content-start py-3 ps-3 border"
+                    >
+                      <i
+                        class="bi bi-grid-fill mx-2 p-1 text-secondary sidebar__icon"
+                      ></i>
+                      <p class="text-secondary ms-2 p-1 sidebar__text">
+                        Máy quay thông minh N3
+                      </p>
+                    </li>
+                    <li
+                      class="sidebar__item d-flex align-items-center justify-content-start py-3 ps-3 border"
+                    >
+                      <i
+                        class="bi bi-grid-fill mx-2 p-1 text-secondary sidebar__icon"
+                      ></i>
+                      <p class="text-secondary ms-2 p-1 sidebar__text">
+                        Motor R34C đa dụng
+                      </p>
+                    </li>
+                    <li
+                      class="sidebar__item d-flex align-items-center justify-content-start py-3 ps-3 border"
+                    >
+                      <i
+                        class="bi bi-grid-fill mx-2 p-1 text-secondary sidebar__icon"
+                      ></i>
+                      <p class="text-secondary ms-2 p-1 sidebar__text">
+                        Máy in laser màu 3D
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="sidebar d-none d-lg-block">
+                  <ul class="sibebar__list">
+                    <div
+                      class="sidebarHeader d-flex align-items-center border text-primary py-3 ps-3 border bg-secondary text-uppercase"
+                    >
+                      <i
+                        class="bi sidebar__icon mx-2 p-1 fw-bold bi-currency-dollar"
+                      ></i>
+                      <p>Tìm theo mức giá</p>
+                    </div>
+                    <li
+                      class="sidebar__item d-flex align-items-center justify-content-start py-3 ps-3 border"
+                    >
+                      <i
+                        class="bi bi-grid-fill mx-2 p-1 text-secondary sidebar__icon"
+                      ></i>
+                      <p class="text-secondary ms-2 p-1 sidebar__text">
+                        0 - 200.000 Đ (45)
+                      </p>
+                    </li>
+                    <li
+                      class="sidebar__item d-flex align-items-center justify-content-start py-3 ps-3 border"
+                    >
+                      <i
+                        class="bi bi-grid-fill mx-2 p-1 text-secondary sidebar__icon"
+                      ></i>
+                      <p class="text-secondary ms-2 p-1 sidebar__text">
+                        200.000 Đ - 500.000 Đ (32)
+                      </p>
+                    </li>
+                    <li
+                      class="sidebar__item d-flex align-items-center justify-content-start py-3 ps-3 border"
+                    >
+                      <i
+                        class="bi bi-grid-fill mx-2 p-1 text-secondary sidebar__icon"
+                      ></i>
+                      <p class="text-secondary ms-2 p-1 sidebar__text">
+                        500.000 Đ - 1.000.000 Đ (17)
+                      </p>
+                    </li>
+                    <li
+                      class="sidebar__item d-flex align-items-center justify-content-start py-3 ps-3 border"
+                    >
+                      <i
+                        class="bi bi-grid-fill mx-2 p-1 text-secondary sidebar__icon"
+                      ></i>
+                      <p class="text-secondary ms-2 p-1 sidebar__text">
+                        1.000.000 - 2.000.000 Đ (16)
+                      </p>
+                    </li>
+                    <li
+                      class="sidebar__item d-flex align-items-center justify-content-start py-3 ps-3 border"
+                    >
+                      <i
+                        class="bi bi-grid-fill mx-2 p-1 text-secondary sidebar__icon"
+                      ></i>
+                      <p class="text-secondary ms-2 p-1 sidebar__text">
+                        Trên 2.000.000 Đ (9)
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="color d-none d-lg-block">
+                  <ul class="sibebar__list">
+                    <div
+                      class="header d-flex align-items-center border text-primary py-3 ps-3 border bg-secondary text-uppercase"
+                    >
+                      <i class="bi color__icon mx-2 p-1 bi-brush-fill"></i>
+                      <p>Tìm theo màu sắc</p>
+                    </div>
+                    <li
+                      class="sidebar__item d-flex align-items-center justify-content-start py-3 ps-3 border"
+                    >
+                      <i
+                        class="bi bi-square-fill me-3 mx-2 p-1"
+                        style="color: red"
+                      ></i
+                      ><span class="color__name">Màu đỏ (45)</span>
+                    </li>
+                    <li
+                      class="sidebar__item d-flex align-items-center justify-content-start py-3 ps-3 border"
+                    >
+                      <i
+                        class="bi bi-square-fill me-3 mx-2 p-1"
+                        style="color: yellow"
+                      ></i
+                      ><span class="color__name">Màu vàng (32)</span>
+                    </li>
+                    <li
+                      class="sidebar__item d-flex align-items-center justify-content-start py-3 ps-3 border"
+                    >
+                      <i
+                        class="bi bi-square-fill me-3 mx-2 p-1"
+                        style="color: blue"
+                      ></i
+                      ><span class="color__name">Màu xanh (27)</span>
+                    </li>
+                    <li
+                      class="sidebar__item d-flex align-items-center justify-content-start py-3 ps-3 border"
+                    >
+                      <i
+                        class="bi bi-square-fill me-3 mx-2 p-1"
+                        style="color: gray"
+                      ></i
+                      ><span class="color__name">Màu bạc (16)</span>
+                    </li>
+                    <li
+                      class="sidebar__item d-flex align-items-center justify-content-start py-3 ps-3 border"
+                    >
+                      <i
+                        class="bi bi-square-fill me-3 mx-2 p-1"
+                        style="color: black"
+                      ></i
+                      ><span class="color__name">Màu đen (9)</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="sidebar d-none d-lg-block">
+                  <ul class="sibebar__list">
+                    <div
+                      class="sidebarHeader d-flex align-items-center border text-primary py-3 ps-3 border bg-secondary text-uppercase"
+                    >
+                      <i class="bi bi-gift-fill mx-2 p-1"></i>
+                      <p>sản phẩm khuyến mại</p>
+                    </div>
+                    <div
+                      class="sale__product d-flex align-items-center justify-content-center border"
+                    >
+                      <img
+                        class="img-fluid p-2"
+                        src="../images/product1.jpg"
+                        alt="sale product"
+                      />
+                      <div class="product-des ms-2">
+                        <h6 class="text-uppercase">
+                          Máy khoan Black decker loại 1
+                        </h6>
+                        <p class="text-danger fw-bold">1.000.000 Đ</p>
+                      </div>
+                    </div>
+                    <div
+                      class="sale__product d-flex align-items-center justify-content-center border"
+                    >
+                      <img
+                        class="img-fluid p-2"
+                        src="../images/product2.jpg"
+                        alt="sale product"
+                      />
+                      <div class="product-des ms-2">
+                        <h6 class="text-uppercase">
+                          Máy khoan Black decker loại 2
+                        </h6>
+                        <p class="text-danger fw-bold">2.500.000 Đ</p>
+                      </div>
+                    </div>
+                    <div
+                      class="sale__product d-flex align-items-center justify-content-center border"
+                    >
+                      <img
+                        class="img-fluid p-2"
+                        src="../images/product3.jpg"
+                        alt="sale product"
+                      />
+                      <div class="product-des ms-2">
+                        <h6 class="text-uppercase">
+                          Máy khoan Black decker loại 3
+                        </h6>
+                        <p class="text-danger fw-bold">800.000 Đ</p>
+                      </div>
+                    </div>
+                    <div
+                      class="sale__product d-flex align-items-center justify-content-center border"
+                    >
+                      <img
+                        class="img-fluid p-2"
+                        src="../images/product4.jpg"
+                        alt="sale product"
+                      />
+                      <div class="product-des ms-2">
+                        <h6 class="text-uppercase">
+                          Máy khoan Black decker loại 3
+                        </h6>
+                        <p class="text-danger fw-bold">800.000 Đ</p>
+                      </div>
+                    </div>
+                    <div
+                      class="sale__product d-flex align-items-center justify-content-center border"
+                    >
+                      <img
+                        class="img-fluid p-2"
+                        src="../images/product5.jpg"
+                        alt="sale product"
+                      />
+                      <div class="product-des ms-2">
+                        <h6 class="text-uppercase">
+                          Máy khoan Black decker loại 3
+                        </h6>
+                        <p class="text-danger fw-bold">800.000 Đ</p>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-9">
+                <div class="product">
+                  <div class="row">
+                    <ul
+                      class="nav nav-tabs d-flex justify-content-between align-items-center my-2"
+                      id="myTab"
+                      role="tablist"
+                    >
+                      <div
+                        class="left-side d-flex justify-content-center align-items-center ms-3"
+                      >
+                        <li class="nav-item d-flex align-items-center">
+                          <label class="text-nowrap fw-bold" for="filterSelectSorting">Sắp xếp theo:</label>
+                          <select class="form-select mx-2 " id="filterSelectSorting">
+                            <option value="">Giá </option>
+                            <option value="name-asc">Thấp đến cao</option>
+                            <option value="price-desc">Cao đến thấp</option>
+                          </select>
+                          
+                        </li>
+                        <li class="nav-item d-flex align-items-center">
+                          <label class="text-nowrap fw-bold" for="filterSelectShow">Show :</label>
+                          <select class="form-select mx-2 " id="filterSelectShow">
+                            <option value="">Số lượng</option>
+                            <option value="9">9</option>
+                            <option value="12">12</option>
+                            <option value="16">16</option>
+                          </select>
+                          
+                        </li>
+                      </div>
+                      <div class="right-side d-flex">
+                        <li class="nav-item">
+                          <a
+                            class="nav-link border active"
+                            id="tab1-tab"
+                            data-bs-toggle="tab"
+                            href="#tab1"
+                            role="tab"
+                            aria-controls="tab1"
+                            aria-selected="aria-selected"
+                            ><i class="bi bi-grid-3x3-gap-fill  fw-bold tab__icon"></i
+                          ></a>
+                        </li>
+                        <li class="nav-item">
+                          <a
+                            class="nav-link border"
+                            id="tab2-tab"
+                            data-bs-toggle="tab"
+                            href="#tab2"
+                            role="tab"
+                            aria-controls="tab2"
+                            ><i
+                              class="bi bi-list fw-bold tab__icon"
+                            ></i
+                          ></a>
+                        </li>
+                      </div>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                      <div
+                        class="tab-pane fade show active"
+                        id="tab1"
+                        role="tabpanel"
+                        aria-labelledby="tab1-tab"
+                      >
+                        <div class="row gy-4" id="product-grid"></div>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="tab2"
+                        role="tabpanel"
+                        aria-labelledby="tab2-tab"
+                      >
+                        <div class="row gy-4" id="product-list"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+          </div>
+          <nav class="my-2" id="pagination" aria-label="Page navigation">
+            <ul class="pagination justify-content-end pagination__product">
+              <li class="page-item">
+                <a class="page-link px-3 py-2 m-1">Trang trước</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link p-3 py-2 m-1" href="#">1</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link p-3 py-2 m-1" href="#">2</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link p-3 py-2 m-1" href="#">3</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link p-3 py-2 m-1" href="#">Trang cuối</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row footer__top pt-5">
+          <div class="col-lg-3">
+            <div class="footer__item">
+              <div
+                class="title d-flex justify-content-start align-items-center"
+              >
+                <i class="bi bi-grid-fill text-primary mx-2"></i>
+                <h5>Về chúng tôi</h5>
+              </div>
+              <ul class="p-2">
+                <li class="d-flex py-2">
+                  <span
+                    >Công ty cổ phần công nghệ DKT đã và đang khẳng định vị trí
+                    hàng đầu trong lĩnh vực :Thương mại điện tử</span
+                  >
+                </li>
+                <li class="d-flex py-2">
+                  <i class="mx-2 bi bi-geo-alt-fill p-1"></i
+                  ><span
+                    >Tầng 4- Tòa nhà Hanoi Group 442 Đội Cấn Ba Đình - Hà
+                    Nội</span
+                  >
+                </li>
+                <li class="d-flex py-2">
+                  <i class="mx-2 bi bi-envelope-fill p-1"></i
+                  ><span>support@dkt.com.vn</span>
+                </li>
+                <li class="d-flex py-2">
+                  <i class="mx-2 bi bi-phone-fill p-1"></i
+                  ><span>(84-4) 56565668 - (84-4) 37868904</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="footer__item">
+                  <div
+                    class="title d-flex justify-content-start align-items-center"
+                  >
+                    <i class="bi bi-grid-fill text-primary mx-2"></i>
+                    <h5>Chính sách</h5>
+                  </div>
+                  <ul class="p-2">
+                    <li class="d-flex py-2">
+                      <span>Chính sách giao hàng</span>
+                    </li>
+                    <li class="d-flex py-2">
+                      <span>Chính sách đổi sản phẩm </span>
+                    </li>
+                    <li class="d-flex py-2">
+                      <span>Chính sách bảo hành </span>
+                    </li>
+                    <li class="d-flex py-2"><span>Chính sách trả góp</span></li>
+                    <li class="d-flex py-2">
+                      <span>Giới thiệu hàng đổi trả</span>
+                    </li>
+                    <li class="d-flex py-2">
+                      <span>Vận chuyển miễn phí </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="footer__item">
+                  <div
+                    class="title d-flex justify-content-start align-items-center"
+                  >
+                    <i class="bi bi-grid-fill text-primary mx-2"></i>
+                    <h5>Dịch vụ &amp; hỗ trợ</h5>
+                  </div>
+                  <ul class="p-2">
+                    <li class="d-flex py-2"><span>Hệ thống cửa hàng</span></li>
+                    <li class="d-flex py-2"><span>Hướng dẫn mua hàng</span></li>
+                    <li class="d-flex py-2">
+                      <span>Hướng dẫn thanh toán</span>
+                    </li>
+                    <li class="d-flex py-2">
+                      <span>Tích điểm đổi thưởng</span>
+                    </li>
+                    <li class="d-flex py-2">
+                      <span>Dịch vụ đổi trả hàng</span>
+                    </li>
+                    <li class="d-flex py-2"><span>Câu hỏi thường gặp</span></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="footer__item">
+                  <div
+                    class="title d-flex justify-content-start align-items-center"
+                  >
+                    <i class="bi bi-grid-fill text-primary mx-2"></i>
+                    <h5>Tin tức - sự kiện</h5>
+                  </div>
+                  <ul class="p-2">
+                    <li class="d-flex py-2"><span>Tin tức mới nhất</span></li>
+                    <li class="d-flex py-2"><span>Tin tức khuyến mại</span></li>
+                    <li class="d-flex py-2">
+                      <span>Tuyển dụng , đãi ngộ</span>
+                    </li>
+                    <li class="d-flex py-2"><span>Download tài liệu</span></li>
+                    <li class="d-flex py-2">
+                      <span>Chương trình đối tác</span>
+                    </li>
+                    <li class="d-flex py-2">
+                      <span>Nhà phát triển ứng dụng</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="footer__item">
+                  <div
+                    class="title d-flex justify-content-start align-items-center"
+                  >
+                    <i class="bi bi-grid-fill text-primary mx-2"></i>
+                    <h5>Kết nối</h5>
+                  </div>
+                  <ul class="p-2">
+                    <li class="d-flex py-2">
+                      <i class="mx-2 bi bi-facebook p-1"></i
+                      ><span>Facebook</span>
+                    </li>
+                    <li class="d-flex py-2">
+                      <i class="mx-2 bi bi-twitter p-1"></i><span>Twitter</span>
+                    </li>
+                    <li class="d-flex py-2">
+                      <i class="mx-2 bi bi-google p-1"></i><span>Google</span>
+                    </li>
+                    <li class="d-flex py-2">
+                      <i class="mx-2 bi bi-skype p-1"></i><span>Skype</span>
+                    </li>
+                    <li class="d-flex py-2">
+                      <i class="mx-2 bi bi-instagram p-1"></i
+                      ><span>Instagram</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row footer__middle my-4">
+          <div class="col-lg-6">
+            <h6 class="display-7 p-3">Thanh toán :</h6>
+            <div class="row gy-3 d-flex justify-content-start">
+              <div class="col-5 col-lg-3">
+                <img src="../images/card1.jpg" alt="card image" />
+              </div>
+              <div class="col-5 col-lg-3">
+                <img src="../images/card2.jpg" alt="card image" />
+              </div>
+              <div class="col-5 col-lg-3">
+                <img src="../images/card3.jpg" alt="card image" />
+              </div>
+              <div class="col-5 col-lg-3">
+                <img src="../images/card4.jpg" alt="card image" />
+              </div>
+              <div class="col-5 col-lg-3">
+                <img src="../images/card5.jpg" alt="card image" />
+              </div>
+              <div class="col-5 col-lg-3">
+                <img src="../images/card6.jpg" alt="card image" />
+              </div>
+              <div class="col-5 col-lg-3">
+                <img src="../images/card7.jpg" alt="card image" />
+              </div>
+              <div class="col-5 col-lg-3">
+                <img src="../images/card8.jpg" alt="card image" />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h6 class="display-7 p-3">Giải đáp nhanh :</h6>
+            <div class="row p-3">
+              <div
+                class="col-lg-6 d-flex justify-content-start align-items-center p-3"
+              >
+                <i
+                  class="text-primary footer__icon me-3 bi bi-telephone-fill"
+                ></i>
+                <div class="text">
+                  <p>Tư vấn miễn phí</p>
+                  <h5 class="fw-bold text-danger">1900 650 650</h5>
+                </div>
+              </div>
+              <div
+                class="col-lg-6 d-flex justify-content-start align-items-center p-3"
+              >
+                <i class="text-primary footer__icon me-3 bi bi-wechat"></i>
+                <div class="text">
+                  <p>Góp ý - phản hồi - thắc mắc</p>
+                  <h5 class="fw-bold text-danger">1900 650 650</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom bg-dark">
+        <div class="container">
+          <div class="row d-flex justify-content-between p-2">
+            <div class="footer__left col-lg-6 d-flex">
+              <p>
+                Bản quyền thuộc về <span class="text-light">DesignTeam. </span>
+              </p>
+              <p>Phát triển bởi <span class="text-light">Bizweb.</span></p>
+            </div>
+            <div class="footer__right col-lg-6">
+              <ul class="d-flex">
+                <li class="mx-2">Trang chủ</li>
+                <li class="mx-2">Giới thiệu</li>
+                <li class="mx-2">Sản phẩm</li>
+                <li class="mx-2">Tin khuyến mại</li>
+                <li class="mx-2">Dịch vụ</li>
+                <li class="mx-2">Liên hệ</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="../scripts/cart.js"></script>
+  </body>
+</html>
